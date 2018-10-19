@@ -12,12 +12,15 @@ def rm(filename):
 #     if os.path.isfile(filename):
 #         os.remove(filename)
 
+def my_function(a, b):
+    """Returns a * b"""
+    return a * b
+
 
 class RemovalService:
     """A service for removing objects from the filesystem."""
 
     def rm(self, filename):
-        del None
         if path.isfile(filename):
             os.remove(filename)
 
