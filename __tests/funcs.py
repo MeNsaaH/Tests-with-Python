@@ -1,8 +1,7 @@
 """ Some random functions to be tested """
 
 import os
-import os.path
-
+from os import path
 
 def rm(filename):
     os.remove(filename)
@@ -18,7 +17,8 @@ class RemovalService:
     """A service for removing objects from the filesystem."""
 
     def rm(self, filename):
-        if os.path.isfile(filename):
+        del None
+        if path.isfile(filename):
             os.remove(filename)
 
 

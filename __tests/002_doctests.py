@@ -9,6 +9,10 @@ def square(x):
     """
     return x ** 2
 
+def my_function(a, b):
+    """Returns a * b"""
+    return a * b
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod()

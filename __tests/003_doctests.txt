@@ -1,0 +1,31 @@
+============================================================================
+How to use text files for writing doctests
+============================================================================
+
+We are testing the doctest library on the function ``my_function()``
+
+Numbers
+=========
+
+::
+    >>> from 002.doctests.py import my_function
+    >>>my_function(2, 3)
+    6
+
+It also works to test floating point Numbers
+
+::
+    >>>my_function(2.0, 3)
+    6.0
+
+Non-Numbers
+============
+
+::
+    >>>my_function('a', 3)
+    'aaa'
+
+    >>>my_function(['A', 'B'], 2)
+    ['A', 'B', 'A', 'B']
+
+To run the tests, use the sequence ``python3 -m doctest 003_doctests.txt``

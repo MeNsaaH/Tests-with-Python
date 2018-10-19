@@ -15,10 +15,10 @@ class MethodTestCase(unittest.TestCase):
 
     # Mocking class objects
 
-    # def test_ret_value(self):
-    #     _class = mock.Mock()
-    #     _class.apply.return_value = 5
-    #     self.assertTrue(call_apply(_class) == 5)
+    def test_ret_value(self):
+        _class = mock.Mock()
+        _class.apply.return_value = 5
+        self.assertTrue(call_apply(_class) == 5)
 
 
 # Mocking Classes and Objects
