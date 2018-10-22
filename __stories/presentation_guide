@@ -24,3 +24,6 @@ long as possible
 What if rather than bulldozing through a feature, we actually plan that feature,
 by writing tests that break the feature even before it exists, then create the
 feature to pass that same test. In other words, we need to obey the testing goat
+
+
+To run behave with tags you run `behave --tags={tags}`
