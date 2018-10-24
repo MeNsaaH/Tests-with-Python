@@ -17,6 +17,7 @@ class MethodTestCase(unittest.TestCase):
 
     def test_ret_value(self):
         _class = mock.Mock()
+        #create a mock method apply() with a return value
         _class.apply.return_value = 5
         self.assertTrue(call_apply(_class) == 5)
 
@@ -27,7 +28,7 @@ class MethodTestCase(unittest.TestCase):
 
 #     def test_greeting(self):
 #         _class = mock.Mock()
-#         type(_class).greeting = mock.PropertyMock(return_value='hello')
+#         _class.greet = "hello"
 
 #         self.assertEqual(greet(_class), 'hello')
 
