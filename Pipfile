@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 coverage = "*"
 pytest-django = "*"
+behave = "*"
+manuel = "*"
 
 [dev-packages]
 

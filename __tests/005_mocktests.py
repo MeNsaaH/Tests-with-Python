@@ -30,14 +30,14 @@ class RmTestCase(unittest.TestCase):
 
 ## WELCOME MOCK TESTING
 
-# class RmTestCase(unittest.TestCase):
+class RmTestCase(unittest.TestCase):
 
-#     # Mock a module where it is called/used not from the base module library
-#     @mock.patch('funcs.os')
-#     def test_rm(self, mock_os):
-#         funcs.rm("any path")
-#         # test that rm called os.remove with the right parameters
-#         mock_os.remove.assert_called_with("any path")
+    # Mock a module where it is called/used not from the base module library
+    @mock.patch('funcs.os')
+    def test_rm(self, mock_os):
+        funcs.rm("any path")
+        # test that rm called os.remove with the right parameters
+        mock_os.remove.assert_called_with("any path")
 
 
 # class RmTestCase(unittest.TestCase):
@@ -65,7 +65,7 @@ class RmTestCase(unittest.TestCase):
 
 # class RemovalServiceTestCase(unittest.TestCase):
 
-#     @mock.patch('funcs.os.path')
+#     @mock.patch('funcs.path')
 #     @mock.patch('funcs.os')
 #     def test_rm(self, mock_os, mock_path):
 #         # instantiate our service

@@ -1,0 +1,29 @@
+- Ask everyone individually, Do you test your code?
+- Show internet memes of untested code
+- Show internet horror stories of untested code
+- Find short video (optionally make one)
+- Non linear presentation (from back to front to center)
+- Poll the audience
+- Share the stage with listeners
+- Make sure to use short sentences per slide. it is better to 
+have plentier slides with less words per slide (human psyche)
+
+
+
+- We all never want to be this guy because everyone pretty much
+hates this guy <ref: writes_unmaintanable_code> 
+...and to avoid that, the necessary things must be done
+
+- It's already hard enough as it is to document your code, but then at the same
+time we also get unfairly introduced to the world of tests
+<ref: our_initial_confusion>
+
+
+So being the normal rational human beings we are, we avoid writing tests for as
+long as possible
+What if rather than bulldozing through a feature, we actually plan that feature,
+by writing tests that break the feature even before it exists, then create the
+feature to pass that same test. In other words, we need to obey the testing goat
+
+
+To run behave with tags you run `behave --tags={tags}`

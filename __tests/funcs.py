@@ -1,8 +1,7 @@
 """ Some random functions to be tested """
 
 import os
-import os.path
-
+from os import path
 
 def rm(filename):
     os.remove(filename)
@@ -13,12 +12,16 @@ def rm(filename):
 #     if os.path.isfile(filename):
 #         os.remove(filename)
 
+def my_function(a, b):
+    """Returns a * b"""
+    return a * b
+
 
 class RemovalService:
     """A service for removing objects from the filesystem."""
 
     def rm(self, filename):
-        if os.path.isfile(filename):
+        if path.isfile(filename):
             os.remove(filename)
 
 
